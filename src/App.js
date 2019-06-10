@@ -13,24 +13,26 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="container outside app">
-          <div className="inner">
-            <MyNavbar />
-            <Switch>
-              <Fragment>
-                <div className="App">
-                  <Route exact path="/" component={HomePage} />
-                  <Route path="/about" component={AboutMe} />
-                  <Route path="/education" component={AboutMe} />
-                  <Route path="/projects" component={Projects} />
-                  <Route path="/contact" component={Contact} />
-                  <Route path="/success" component={Success} />
-                </div>
-              </Fragment>
-            </Switch>
+        <>
+          <div className="container outside app">
+            <div className="inner">
+              <MyNavbar />
+              <Switch>
+                <Fragment>
+                  <div className="App">
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/about" component={AboutMe} />
+                    <Route path="/education" component={AboutMe} />
+                    <Route path="/projects" component={Projects} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/success" component={Success} />
+                  </div>
+                </Fragment>
+              </Switch>
+            </div>
           </div>
           <Footer />
-        </div>
+        </>
       </Router>
     );
   }

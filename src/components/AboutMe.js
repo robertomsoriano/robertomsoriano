@@ -12,7 +12,7 @@ const AboutMe = () => {
         <p> Glad you asked!</p>
         <div className="container" style={{ marginBottom: "200px" }}>
           <p>
-            I'm a people person, who loves to develop web applications that
+            I'm a software engineer, who loves to develop web applications that
             satisfy specific needs. I consider myself a technical person, who
             likes to analyze details and arrive at accurate conclusions. I would
             say my interest in engineering arises, not so much from just
@@ -50,7 +50,7 @@ const AboutMe = () => {
             libraries like NumPy, Pandas and MatPlotLib.{" "}
           </p>
           <p style={{ textAlign: "center" }}>
-            <strong>I invite you to keep getting to know me!</strong>
+            <strong>Get to know me better!</strong>
             <br />
             <br /> Shoot me a message to schedule an interview:
           </p>

@@ -1,11 +1,19 @@
 html,
 body {
+    margin: auto;
+    align-content: center;
+    min-height: 740px;
+    background-color: rgb(241, 234, 224);
+    
+}
+.outside{
     min-width: 320px;
     max-width: 967px;
     min-height: 740px;
-    margin: auto;
-    align-content: center;
+    
+    
 }
+
 .app {
     min-height: 100%;
     display: flex;
@@ -74,17 +82,18 @@ body {
     
   } */
   .footer {
-    /* width: auto;
-    position: relative;
-    height: auto; */
-    position: fixed;
-    right: 0;
+    width:auto ;
+    height:100px; 
+    position: relative; 
     left: 0;
-    bottom: 0;
+    right: 0;
+    bottom: 0 !important;
     flex-shrink: 0;
     justify-content: center;
-    background-color: #efefef;
+    background-color: rgba(245, 220, 183, 0.253);    /*#efefef; */
     margin: 0 auto;
+    text-decoration: none;
+    
   }
 
 
