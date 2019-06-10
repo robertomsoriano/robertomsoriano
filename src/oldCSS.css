@@ -1,0 +1,203 @@
+:root {
+    --main-font-color: #black;
+    --main-background: rgba(255, 127, 80, 0.098);
+  }
+  
+  html,
+  body {
+    margin: auto; /* remove default margin */
+    margin-top: 1rem;
+    padding: 0; /* remove default padding */
+    width: 100%; /* take full browser width */
+    height: 100vh; /* take full browser height*/
+    text-align: center;
+    max-width: 130vh;
+    background-color: var(--main-background);
+    color: var(--main-font-color) !important;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .outside {
+    background-color:var(--main-background);
+    height: 100vh;
+  }
+  @media (max-width: 767px) {
+    .outside {
+      height: 100%;
+    }
+    body {
+      margin-top: 0;
+      background-color: var(--main-background);
+    }
+  
+  }
+  
+  .text-primary {
+    color: #f3d36b !important;
+  }
+  /* .bgImage {
+    background: url(./images/cartography-3244166_1280.png),
+      linear-gradient(to right, #ffffff, #ffefba);
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    animation: blurry 10s;
+  } */
+  
+  @keyframes blurry {
+    0% {
+      filter: blur(0px);
+    }
+    70% {
+      filter: blur(2.5px);
+    }
+    100% {
+      filter: blur(5px);
+    }
+  }
+  .mainPic {
+    display: inline-block;
+  }
+  .mainPic img {
+    height: 30vh;
+    width: 300px;
+    display: inline-block;
+    background-color: transparent !important;
+    border-radius: 0%;
+    margin-top: 12.4rem;
+    position: relative;
+  }
+  @media only screen and (max-width: 600px) {
+    .mainPic img {
+      width: 40%;
+      height: 15vh;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+    .frontItems {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .bgImage {
+      display: none;
+    }
+  }
+  .jumbotron {
+    background-color: transparent !important;
+    margin-bottom: -10px;
+    
+  }
+  @import url('https://fonts.googleapis.com/css?family=Anton|Montserrat');
+  .display-3 {
+    color: var(--main-font-color) !important;
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    font-size: 4.5rem;
+    /* letter-spacing: 10px; */
+    border: 5px;
+    border-radius: 5px;
+  
+  }
+  .lead {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .frontItems {
+    font-size: 1rem;
+  }
+  
+  .icons {
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    margin: 0 0 0 0 !important;
+  }
+  
+  @keyframes mymove {
+    0% {
+      opacity: 0;
+      transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    4.7% {
+      transform: matrix3d(0.725, 0, 0, 0, 0, 0.725, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    9.41% {
+      transform: matrix3d(0.942, 0, 0, 0, 0, 0.942, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    14.11% {
+      transform: matrix3d(1.07, 0, 0, 0, 0, 1.07, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    18.72% {
+      transform: matrix3d(1.106, 0, 0, 0, 0, 1.106, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    24.32% {
+      transform: matrix3d(1.075, 0, 0, 0, 0, 1.075, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    29.93% {
+      transform: matrix3d(1.024, 0, 0, 0, 0, 1.024, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    35.54% {
+      transform: matrix3d(0.99, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    41.04% {
+      transform: matrix3d(0.98, 0, 0, 0, 0, 0.98, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    52.15% {
+      transform: matrix3d(0.996, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    63.26% {
+      transform: matrix3d(1.004, 0, 0, 0, 0, 1.004, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    85.49% {
+      transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    100% {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(255, 127, 80, 0.098);
+    border-radius: 20%
+  }
+  .grid-items {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+  .devicons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    font-size: 90px;
+    opacity: .5;
+  }
+  .devicons i {
+    margin: 20px;
+  }
+  @media (max-width: 767px){
+    .devicons i{
+      display: none;
+    }
+  }

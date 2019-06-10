@@ -1,0 +1,139 @@
+html,
+body {
+    min-width: 320px;
+    max-width: 967px;
+    min-height: 740px;
+    margin: auto;
+    align-content: center;
+}
+.app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.inner{
+    flex: 1 0 auto;
+    flex-shrink: 1;
+}
+
+.jumbotron {
+    margin-bottom: 0rem;
+}
+.mainPic {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes mainpichover {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.mainPic:hover {
+    animation: mainpichover .3s;
+}
+.wrapper {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+.one {
+    grid-column: 2;
+  }
+  .two { 
+    grid-column: 3;
+  }
+  .three {
+    grid-column: 4;
+  }
+
+.fas {
+    padding: .3rem 0;
+    font-size: 3rem;
+}
+
+/* .footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    flex-shrink: 0;
+    justify-content: center;
+    z-index: -1;
+    
+  } */
+  .footer {
+    /* width: auto;
+    position: relative;
+    height: auto; */
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    background-color: #efefef;
+    margin: 0 auto;
+  }
+
+
+.thumbnails {
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+margin:70px 14% 50px;
+justify-content:center;
+}
+.thumbnail {
+height:70px;
+width:90px;
+display:flex;
+align-items:center;
+text-align:center;
+justify-content:center;
+border: 1px solid;
+border-radius:10%;
+    margin: 10px;
+font-family: "Amatic SC";
+font-weight:bold;
+text-shadow: -1px 0 palevioletred,0 1px palevioletred,1px 0 palevioletred,0 -1px palevioletred;
+font-size:1.2em;
+padding:0.5px;
+letter-spacing:1.5px;
+color:black;
+
+}
+
+.thumbnail:hover {
+background-color:coral;
+text-decoration:none;
+color: rgb(89, 2, 0);
+}
+
+.bottomLinks {
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top: 80px;
+    margin-bottom: 210px;
+  }
+
+  .bottomLinks-icons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
