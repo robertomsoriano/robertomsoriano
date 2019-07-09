@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Success from "./components/Success";
+import SingleProject from "./components/projects/SingleProject";
 
 class App extends Component {
   render() {
@@ -23,7 +24,8 @@ class App extends Component {
                     <Route exact path="/" component={HomePage} />
                     <Route path="/about" component={AboutMe} />
                     <Route path="/education" component={AboutMe} />
-                    <Route path="/projects" component={Projects} />
+                    <Route exact path="/projects" component={Projects} />
+                    <Route path="/projects/:name" component={SingleProject} />
                     <Route path="/contact" component={Contact} />
                     <Route path="/success" component={Success} />
                   </div>

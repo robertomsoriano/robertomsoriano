@@ -37,7 +37,7 @@ export default class MyNavbar extends React.Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto" navbar style={{ fontSize: "20px" }}>
               <NavItem>
                 <NavLink
                   href="https://github.com/robertomsoriano"

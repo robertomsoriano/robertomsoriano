@@ -11,11 +11,15 @@ class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        <div className="bgImage" />
-        <MainHeader />
-        <MainPic />
-        <HomeButton text={"Get to Know Me"} link={"/about"} />
-        <Icons />
+        <div
+        // style={{ background: "rgb(25, 2336, 2220)", borderRadius: "10px" }}
+        >
+          <div className="bgImage" />
+          <MainHeader />
+          <MainPic />
+          <HomeButton text={"Get to Know Me"} link={"/about"} />
+          <Icons />
+        </div>
       </Fragment>
     );
   }

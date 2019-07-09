@@ -4,13 +4,49 @@ body {
     align-content: center;
     min-height: 740px;
     background-color: rgb(241, 234, 224);
+    font-family: 'Roboto';
+    /* border-style: solid;
+    border-width: 10px;
+    
+    border-color: antiquewhite; */
+    animation: blurry .4s, body .3s;
+ 
     
 }
+/* @keyframes body{
+    0%{background:#45bef1}
+    25%{background:#f6511d}
+    50%{background: white}
+    75%{background:#fa8d1d}
+    100%{background:#45bef1}
+}
+
+@keyframes blurry {
+    0% {
+      filter: blur(0px);
+      transform: scale(.1);
+    }
+    30% {
+        filter: blur(0px);
+        transform: scale(.3);
+      }
+   
+    70% {
+        filter: blur(1.5px);
+        transform: scale(.7);
+      }
+    100% {
+        transform: matrix3d(1.106, 0, 0, 0, 0, 1.106, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transform: scale(1);
+    }
+} */
 .outside{
     min-width: 320px;
     max-width: 967px;
     min-height: 740px;
-    
+    /* border-style: solid;
+    border-width: 15px;
+    border-radius: 10px; */
     
 }
 
@@ -27,22 +63,15 @@ body {
 
 .jumbotron {
     margin-bottom: 0rem;
+    font-family: 'Roboto'
 }
 .mainPic {
     display: flex;
     justify-content: center;
 }
 
-@keyframes mainpichover {
-    from {
-        transform: scale(1.1);
-    }
-    to {
-        transform: scale(1);
-    }
-}
 .mainPic:hover {
-    animation: mainpichover .3s;
+    transform: translateY(-5px);
 }
 .wrapper {
     text-align: center;
@@ -68,19 +97,6 @@ body {
     font-size: 3rem;
 }
 
-/* .footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-    flex-shrink: 0;
-    justify-content: center;
-    z-index: -1;
-    
-  } */
   .footer {
     width:auto ;
     height:100px; 
@@ -93,7 +109,7 @@ body {
     background-color: rgba(245, 220, 183, 0.253);    /*#efefef; */
     margin: 0 auto;
     text-decoration: none;
-    
+    margin-top: 10vh;;
   }
 
 
@@ -101,7 +117,7 @@ body {
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
-margin:70px 14% 50px;
+margin:40px 14% 50px;
 justify-content:center;
 }
 .thumbnail {
@@ -113,8 +129,8 @@ text-align:center;
 justify-content:center;
 border: 1px solid;
 border-radius:10%;
-    margin: 10px;
-font-family: "Amatic SC";
+margin-top: 10px;
+font-family: "Roboto"; /*"Amatic SC"; */
 font-weight:bold;
 text-shadow: -1px 0 palevioletred,0 1px palevioletred,1px 0 palevioletred,0 -1px palevioletred;
 font-size:1.2em;
@@ -146,3 +162,50 @@ color: rgb(89, 2, 0);
     justify-content:center;
     flex-wrap:wrap;
   }
+
+  .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.803);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: .4em;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .thumbnail:hover .tooltiptext {
+    visibility: visible;
+    margin: 4em -3.6em;
+
+  }
+
+  .scroll {
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 5px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.single-proj{
+    margin-top: 0rem;
+    min-height: 967px;
+    
+}
+.projects-grid {
+    display:grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-auto-rows: minmax(100px, auto);
+}
+.project-card:hover {
+    background-color: rgb(241, 220, 189) !important;
+    padding: 9px;
+    transform: translateY(-5px)
+}

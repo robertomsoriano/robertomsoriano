@@ -2,21 +2,29 @@ import React from "react";
 
 const Icons = () => {
   let iconsList = [
-    "fas fa-terminal fa-1x",
-    "fab fa-docker fa-2x",
-    "fab fa-js fa-2x",
-    "fab fa-node fa-2x",
-    "fab fa-react fa-2x",
-
-    "fab fa-github fa-2x"
+    ["fas fa-terminal fa-1x", "Terminal"],
+    // ["fas fa-code fa-1x", "Markup"],
+    ["fab fa-js fa-2x", "JavaScript"],
+    ["fab fa-node fa-2x", "NodeJS"],
+    ["fab fa-react fa-2x", "ReactJS"],
+    ["fab fa-github fa-2x", "GitHub"],
+    ["fab fa-docker fa-2x", "Docker"],
+    ["fas fa-plane-departure fa-2x", "Deployment"]
   ];
 
   return (
     <div style={{ marginBottom: "150px" }}>
+      <h2
+        style={{ marginTop: "2em", textAlign: "center", fontFamily: "roboto" }}
+      >
+        My ToolBox
+      </h2>
       <div className="thumbnails">
         {iconsList.map(icon => (
           <span className="thumbnail" key={icon}>
-            <i className={icon} />
+            <i className={icon[0]}>
+              <span className="tooltiptext">{icon[1]}</span>
+            </i>
           </span>
         ))}
       </div>
