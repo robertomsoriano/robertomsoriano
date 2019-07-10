@@ -4,17 +4,15 @@ services:
     container_name: portfolio-react-node
     restart: always
     build: .
-    # ports:
-    #   - '80:5000'
     expose:
       - 80
     restart: always
 #     volumes: ['./:/var/www/html']
-#     environment:
-#       VIRTUAL_HOST: robertoms.tk
-#       LETSENCRYPT_HOST: robertoms.tk
-#       LETSENCRYPT_EMAIL: robertomsoriano@hotmail.com
-# networks:
-#   default:
-#     external:
-#       name: nginx-proxy
+    environment:
+      VIRTUAL_HOST: robertmsoriano.com
+      LETSENCRYPT_HOST: robertmsoriano.com
+      LETSENCRYPT_EMAIL: robertomsoriano@hotmail.com
+networks:
+  default:
+    external:
+      name: nginx-proxy
