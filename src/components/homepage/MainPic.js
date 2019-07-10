@@ -1,11 +1,12 @@
 import React from "react";
-import pic from "../../images/profile.jpg";
+// import pic from "../../images/profile.jpg";
+import { gdPic } from "../../utils";
 const MainPic = () => {
   return (
     <div className="container mainPic">
       <div className="hidden-xs hidden-sm center">
         <img
-          src={pic}
+          src={gdPic("11l5YWR_g0CxnjRLUQ1p3GI9Ow37To6NY")}
           alt=""
           style={{
             borderRadius: "90px",

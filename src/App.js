@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MyNavbar from "./components/MyNavbar";
 import Footer from "./components/Footer";
@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Success from "./components/Success";
 import SingleProject from "./components/projects/SingleProject";
+import NotFound from "./components/NotFound";
 
 class App extends Component {
   render() {
@@ -19,17 +20,14 @@ class App extends Component {
             <div className="inner">
               <MyNavbar />
               <Switch>
-                <Fragment>
-                  <div className="App">
-                    <Route exact path="/" component={HomePage} />
-                    <Route path="/about" component={AboutMe} />
-                    <Route path="/education" component={AboutMe} />
-                    <Route exact path="/projects" component={Projects} />
-                    <Route path="/projects/:name" component={SingleProject} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/success" component={Success} />
-                  </div>
-                </Fragment>
+                <Route exact path="/" component={HomePage} />
+                <Route path="/about" component={AboutMe} />
+                <Route path="/education" component={AboutMe} />
+                <Route exact path="/projects" component={Projects} />
+                <Route path="/projects/:name" component={SingleProject} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/success" component={Success} />
+                <Route component={NotFound} />
               </Switch>
             </div>
           </div>

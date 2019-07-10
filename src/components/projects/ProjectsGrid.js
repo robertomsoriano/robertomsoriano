@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bookstore from "../../images/bookstore.png";
-import npipic from "../../images/npipic.png";
+import bookstore from "../../images/bookstore.jpg";
+import npipic from "../../images/npipic.jpg";
+// import { gdPic } from "../../utils";
 
 const ProjectsGrid = () => {
   let props = [
@@ -38,6 +39,7 @@ const ProjectsGrid = () => {
         "A National Provider Identification (NPI) and ICD-10 diagnosis code lookup tool.",
         "I build this tool to improve my efficiency in my current job. Using this tool saves me an average of 25 seconds per search!"
       ],
+      // pic: gdPic(`1UkH-NWkbnCNwc_jbAE2sbE_XNOHnLAWz`),
       pic: npipic,
       tips: [
         "•Try it with NPI: 1225232366",

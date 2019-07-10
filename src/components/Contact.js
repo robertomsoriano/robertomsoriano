@@ -9,7 +9,8 @@ const divStyle = {
   marginTop: "2rem",
   fontFamily: "anton",
   fontWeight: "100",
-  letterSpacing: "2px"
+  letterSpacing: "2px",
+  border: ".3px solid gray"
 };
 
 // const encode = data => {
@@ -80,7 +81,7 @@ const Contact = () => {
           onSubmit={e => handleSubmit(e)}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p className="h3 text-center mb-4">Contact Me</p>
+          <p className="h3 text-center mt-4 mb-4">Contact Me</p>
           <label className="grey-text">Your name</label>
           <input
             type="text"
@@ -142,7 +143,7 @@ const Contact = () => {
             }
           />
 
-          <div className="text-center mt-4">
+          <div className="text-center mt-4 mb-4">
             <MDBBtn
               color="dark"
               outline
