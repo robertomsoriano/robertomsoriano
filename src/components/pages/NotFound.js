@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { underline } from "ansi-colors";
-import HomeButton from "./homepage/HomeButton";
+import HomeButton from "../homepage/HomeButton";
 const NotFound = () => {
   return (
     <>

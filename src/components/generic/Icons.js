@@ -2,7 +2,7 @@ import React from "react";
 
 const Icons = () => {
   let iconsList = [
-    ["fas fa-terminal fa-1x", "Terminal"],
+    // ["fas fa-terminal fa-1x", "Terminal"],
     // ["fas fa-code fa-1x", "Markup"],
     ["fab fa-js fa-2x", "JavaScript"],
     ["fab fa-node fa-2x", "NodeJS"],
@@ -13,12 +13,8 @@ const Icons = () => {
   ];
 
   return (
-    <div style={{ marginBottom: "150px" }}>
-      <h2
-        style={{ marginTop: "2em", textAlign: "center", fontFamily: "roboto" }}
-      >
-        My ToolBox
-      </h2>
+    <div className="toolbox">
+      <h2>My ToolBox</h2>
       <div className="thumbnails">
         {iconsList.map(icon => (
           <span className="thumbnail" key={icon}>

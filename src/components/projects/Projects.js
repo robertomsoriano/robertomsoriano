@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import ProjectBanner from "./projects/ProjectBanner";
-import ProjectsGrid from "./projects/ProjectsGrid";
-import GHButton from "./projects/GHButton";
+import ProjectBanner from "./ProjectBanner";
+import ProjectsGrid from "./ProjectsGrid";
+import GHButton from "./GHButton";
+import Icons from "../generic/Icons";
 
 export default class Projects extends Component {
   render() {
     return (
       <>
-        <div className="container" style={{ marginBottom: "300px" }}>
+        <div className="projects-container">
           <ProjectBanner />
           <ProjectsGrid />
+          <Icons />
           <GHButton />
         </div>
       </>

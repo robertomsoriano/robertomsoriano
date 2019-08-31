@@ -1,37 +1,35 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MyNavbar from "./components/MyNavbar";
-import Footer from "./components/Footer";
+import MyNavbar from "./components/navbar/MyNavbar";
+import Footer from "./components/generic/Footer";
 import "./App.css";
-import HomePage from "./components/HomePage";
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Success from "./components/Success";
+import Home from "./components/homepage/Home";
+import AboutMe from "./components/pages/AboutMe";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/pages/Contact";
+import Success from "./components/pages/Success";
 import SingleProject from "./components/projects/SingleProject";
-import NotFound from "./components/NotFound";
+import NotFound from "./components/pages/NotFound";
 
 class App extends Component {
   render() {
     return (
       <Router>
         <>
-          <div className="container outside app">
-            <div className="inner">
-              <MyNavbar />
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/about" component={AboutMe} />
-                <Route path="/education" component={AboutMe} />
-                <Route exact path="/projects" component={Projects} />
-                <Route path="/projects/:name" component={SingleProject} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/success" component={Success} />
-                <Route component={NotFound} />
-              </Switch>
-            </div>
+          <div className="app-wrapper">
+            <MyNavbar />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={AboutMe} />
+              <Route path="/education" component={AboutMe} />
+              <Route exact path="/projects" component={Projects} />
+              <Route path="/projects/:name" component={SingleProject} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/success" component={Success} />
+              <Route component={NotFound} />
+            </Switch>
+            <Footer />
           </div>
-          <Footer />
         </>
       </Router>
     );

@@ -4,14 +4,7 @@ const BottomLinks = () => {
   return (
     <>
       <div id="Connect" className="bottomLinks ">
-        <h3
-          style={{
-            fontWeight: "500",
-            fontSize: "2.5rem"
-          }}
-        >
-          Let's Connect!
-        </h3>
+        <h3>Let's Connect!</h3>
         <div className="bottomLinks-icons">
           <a
             className="btn btn-default"

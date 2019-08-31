@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bookstore from "../../images/bookstore.jpg";
 import npipic from "../../images/npipic.jpg";
+import movies from "../../images/react-movies.jpg";
+import weather from "../../images/weather.jpg";
 // import { gdPic } from "../../utils";
 
 const ProjectsGrid = () => {
@@ -30,6 +32,50 @@ const ProjectsGrid = () => {
         "fab fa-docker fa-2x"
       ],
       github: "https://github.com/robertomsoriano/books-app"
+    },
+
+    {
+      name: "React Movies",
+      title: "Movies app using React",
+      link: "https://movies.robertmsoriano.com",
+      desc: [
+        "This project was developed using ReactJS for the frontend and NodeJS for serving the static files."
+      ],
+      pic: movies,
+      tips: [
+        "(1) Poke around",
+        "(2) Try the different search options",
+        "* New functionality is currently under construction."
+      ],
+      tech: [
+        "fab fa-js-square fa-2x",
+        "fab fa-react fa-2x",
+        "fab fa-node fa-2x",
+        "fab fa-docker fa-2x"
+      ],
+      github: "https://github.com/robertomsoriano/react-movies"
+    },
+
+    {
+      name: "Weather App",
+      title: "Weather app using React",
+      link: "https://weather.robertmsoriano.com",
+      desc: [
+        "This project was developed using ReactJS for the frontend and NodeJS for serving the static files."
+      ],
+      pic: weather,
+      tips: [
+        "(1) Poke around",
+        "(2) Try searching for different zipcodes",
+        "* New functionality is currently under construction."
+      ],
+      tech: [
+        "fab fa-js-square fa-2x",
+        "fab fa-react fa-2x",
+        "fab fa-node fa-2x",
+        "fab fa-docker fa-2x"
+      ],
+      github: "https://github.com/robertomsoriano/weather-app"
     },
     {
       name: "OneStop",
@@ -89,7 +135,7 @@ const ProjectsGrid = () => {
 export default ProjectsGrid;
 
 const style = {
-  background: "rgba(241, 220, 189, 0.335)",
+  // background: "rgba(241, 220, 189, 0.335)",
   textDecoration: "none",
   color: "black",
   alignContent: "center",

@@ -78,7 +78,11 @@ const SingleProject = props => {
             <br />
             <br />
 
-            <HomeButton text={"Back to projects"} link={"/projects"} />
+            <HomeButton
+              text={"Back to projects"}
+              link={"/projects"}
+              direction={"left"}
+            />
           </div>
         </div>
       </div>

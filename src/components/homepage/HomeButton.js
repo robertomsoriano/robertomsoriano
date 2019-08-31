@@ -3,12 +3,14 @@ import styled from "styled-components";
 
 const Button = styled.button`
   display: inline-block;
-  color: palevioletred;
-  font-size: 1em;
+  // color: palevioletred;
+  color: #47995a;
+  font-size: 1.1em;
   // margin: 1em;
   // margin-bottom: 20px
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
+  // border: 2px solid palevioletred;
+  border: 2px solid #47995a;
   border-radius: 3px;
   display: block;
   &:focus,
@@ -23,35 +25,23 @@ const Button = styled.button`
   }
 `;
 
-const HomeButton = props => {
+const HomeButton = ({ text, link, direction = "right", pos = "center" }) => {
+  let arrowClass = `fas fa-arrow-alt-circle-${direction}`;
   return (
     <>
-      <div className="container">
+      <div className="home-button">
         <div
           className="center"
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: pos,
             overflow: "hidden"
           }}
         >
-          {/* <a href="/about">
-            <button className="btn btn-dark btn-outline">
-              Get to Know Me{"  "}
-              <i
-                className="fas fa-arrow-alt-circle-right"
-                style={{ fontSize: "14px" }}
-              />
-            </button>
-          </a> */}
-
-          <Button as="a" href={props.link}>
-            {props.text}
+          <Button as="a" href={link}>
+            {text}
             {"  "}
-            <i
-              className="fas fa-arrow-alt-circle-right"
-              style={{ fontSize: "14px" }}
-            />
+            <i className={arrowClass} style={{ fontSize: "14px" }} />
           </Button>
         </div>
       </div>

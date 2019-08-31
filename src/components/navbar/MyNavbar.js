@@ -7,12 +7,8 @@ import {
   Nav,
   NavItem,
   NavLink
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem
 } from "reactstrap";
-import logo from "../images/rsgray.png";
+import logo from "../../images/rsgray.png";
 
 export default class MyNavbar extends React.Component {
   constructor(props) {
@@ -30,7 +26,7 @@ export default class MyNavbar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="my-navbar">
         <Navbar color="transparent" light expand="md">
           <NavbarBrand href="/">
             <img src={logo} style={{ width: 100, marginTop: -7 }} alt="" />
@@ -56,20 +52,6 @@ export default class MyNavbar extends React.Component {
               <NavItem>
                 <NavLink href="/contact/">Contact</NavLink>
               </NavItem>
-              {/* <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  About Me
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    <NavLink href="/about/"><i className="far fa-id-badge"></i> Who I am</NavLink>
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    <NavLink href="/contact/"><i className="far fa-address-card"></i> Contact Me</NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown> */}
             </Nav>
           </Collapse>
         </Navbar>
